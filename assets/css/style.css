@@ -1,0 +1,283 @@
+
+
+html, body {
+     margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+/* sticky footer */
+.footer {
+    height: 50px;
+    margin-top: -50px;
+  }
+
+/* adding font and background image to the body */
+body{
+    background-image: url("../images/gravel.png");
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+
+
+}
+
+/* adding background color and border to the header */
+header {
+	background-color: #fff;
+	margin-bottom: 40px;
+	border-bottom: 2px solid #ccc;
+}
+
+/* styling the name in the header  */
+#name {
+	float: left;
+	background-color: #4aaaa5;
+	color:#fff;
+	font-family: "Georgia";
+	font-size: 30px;
+	padding: 0 40px;
+	line-height: 90px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+/* styling the navigation bar  */
+nav {
+    float: right;
+    padding: 25px;
+
+}
+nav a {
+
+    text-decoration: none;
+	color: #777777;
+	margin-left: 20px;
+	line-height: 22px;
+	padding-left: 20px;
+	border-left: 1px solid #ddd;
+}
+#link-1 {
+   	border-left: 0;
+}
+
+/* styling the wrappers on both header and content */
+.wrapper {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 960px;
+ 	margin: 0 auto;
+    overflow: hidden;
+
+}
+
+
+/* adding border and padding to the content */
+#main-content {
+    padding: 30px;
+    border: 2px solid #dddddd;
+    background-color: #ffffff;
+}
+
+/* styling the header inside the content */
+h1 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 30px;
+	font-weight: bold;
+	text-align: left;
+    margin-bottom: 20px;
+
+}
+
+/* stying the image inside the section */
+img {
+
+    float: left;
+    margin-right: 30px;
+
+}
+
+p {
+    color: #777777;
+}
+
+/* adding color when hovering over a link */
+a:hover {
+    color: grey;
+}
+
+
+/* footer styling */
+
+.footer {
+
+    text-align: center;
+	background-color: #666666;
+	color: #ccc;
+	margin-top: 40px;
+	border-top: 8px solid #4aaaa5;
+    font-size: 12px;
+    width: 100%;
+}
+
+
+/* styling the contact form */
+
+ #contact-form ul {
+    margin-bottom: 20px;
+  }
+
+  #contact-form li {
+    margin-bottom: 10px;
+  }
+
+
+label, input[type=text],
+ input[type=email], textarea {
+    display: block;
+  width: 100%;
+
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+/* expanding the size of the message textbox */
+textarea {
+    height: 200px;
+  }
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #4aaaa5;
+    border: 0 none;
+  }
+
+
+  /* portfolio page styling */
+
+#portfolio-block {
+	width: 600px;
+	margin-top: 40px;
+    display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.portfolio-pic {
+
+    width: 33.33%;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+
+.portfolio-text {
+	background: #4aaaa5;
+	height: 50px;
+	margin-top: 150px;
+	padding-top: 10px;
+    position: absolute;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    width: 21%;
+}
+
+
+
+
+/*media query for screeens 640 and less */
+@media screen and (max-width: 640px) {
+
+ .wrapper {
+      width: 100%;
+  }
+
+  /*used selector to align the nav links with the name/logo */
+  .wrapper a {
+    text-align: center;
+    width: 100%;
+
+    }
+
+    .wrapper .navigation {
+        text-align:center;
+        width: 100%;
+    }
+
+   #name {
+       margin-left: -40px;
+
+    }
+/* used inline-block to ensure text doesn't bump with the picture */
+    p {
+        display: inline-block;
+        padding-top: 10px;
+    }
+
+    #main-wrapper {
+        width: 90%;
+    }
+
+    /* added margins so the portfolios are displayed one at a time*/
+
+    .portfolio-pic{
+        margin: 50px;
+    }
+
+}
+
+/* adding media query to align the contents with screen upto 768px */
+@media screen and (max-width: 768px) {
+
+
+    .wrapper {
+        width: 100%;
+    }
+
+    #main-wrapper {
+        width: 90%;
+
+    }
+
+
+}
+
+
+/* adding media query to align the contents with screen upto 980px */
+@media screen and (max-width: 980px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    #main-wrapper {
+        width: 90%;
+
+    }
+
+    .portfolio-text{
+        width: 320px;
+
+
+    }
+}
