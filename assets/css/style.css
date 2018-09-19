@@ -45,6 +45,21 @@ header {
 	text-decoration: none;
 }
 
+/*added hover animations */
+#name:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+
+.photo:hover {
+    border-radius:50%;
+}
+
+#link-1:hover, #link-2:hover, #link-3:hover {
+    color: red;
+}
+
 /* styling the navigation bar  */
 nav {
     float: right;
